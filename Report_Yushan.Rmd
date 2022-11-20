@@ -56,7 +56,7 @@ load("temp.RData")
     3 levels: Unknow; No; Yes
   - `DofRainfBef` - How many consecutive days of rain before the current day\
     3 levels: 0; 1-2; >=3
-3. Use 10 folds cross-validation to select features and reduce overfit.
+3. Add new features, original features, and some interaction into our model. Use 10 folds cross-validation to select features and reduce overfitting.
 4. Random choose 6000 data as training data and the data left are testing data. Fit the model by training data. The true sum of profit for testing data is 447765 and the predicted sum of profit is 443778.9
 
 ```{r, cache=T, out.width="90%", echo=F}
@@ -89,13 +89,19 @@ ggplotly(PredPlot)
 
   - Since it's periodic data, we can also try AR Model.
 
-  - For real data study, I may also consider finance as a feature. When going to a new location to set up transactions, we should also consider the nearby competitors. And in the beginning, when users are not yet familiar with this company, the profit will be much less than other locations.
+  - For real data study, I may also consider finance as a feature. When going to a new location to set up transactions, we should also consider nearby competitors. And in the beginning, when users are not yet familiar with this company, the profit will be much less than in other locations.
 
-  - When I divide features in different levels, I can try to use cluster methods. 
+  - When I divide features into different levels, I can use cluster and other methods. 
 
-  - When I fill missing value, I can fit a model (regression/classification) to predict those missing value. 
+  - When I fill in missing values, I can fit a model (regression/classification) to predict those missing values. 
 
-  - If same `transaction_id` means same customer, we can add this information in our model to make a better prediction.
+  - If the same `transaction_id` means the same customer, we can add this information to our model to make a better prediction.
+  
+  - I can also add more features from transformation by other features in the model.
+  
+  - Calculate the significance of each feature. 
+  
+  - Obviously, our estimation is biased. That's because we are using the Lasso estimator of coefficients of covariates. There are some debiased estimations. 
 
 # Read Data
 
