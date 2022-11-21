@@ -1,4 +1,4 @@
-# [<span style="color:red"> Yushan's Report Link </span>](https://yushan-gu.github.io/Report_Yushan.html)
+# [!!!Yushan's Report Link!!!](https://yushan-gu.github.io/Report_Yushan.html)
 
 # Take-Home Coding Assessment - 2023 CBG Data Science Summer Internship
 
