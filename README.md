@@ -1,4 +1,6 @@
-# [!!!Yushan's Report Link!!!](https://yushan-gu.github.io/Report_Yushan.html)
+# [![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) Yushan's Report Link ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)](https://yushan-gu.github.io/Report_Yushan.html)
+
+**Since my report is in HTML form, I published the HTML form report through GitHub for easier reading. Here is the link.** 
 
 # Take-Home Coding Assessment - 2023 CBG Data Science Summer Internship
 
